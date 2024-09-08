@@ -1,7 +1,8 @@
 body {
     background: url(https://img.freepik.com/free-photo/cyclist-man-racing-bike-outdoor_1150-7494.jpg?t=st=1725804946~exp=1725808546~hmac=a788bfaed053f126d8a3c8e1301ed185399ff3da96e56552b4e988844c1f989b&w=996) no-repeat center center fixed; 
     background-size: cover;
-    color: #023047;
+    color: #669bbc;
+    font-weight: 300;
   }
   .container {
     perspective: 1000;
@@ -28,7 +29,7 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    background-color: #d9ed92;
+    background-color: #003049;
   }
   
   .signup {
@@ -45,8 +46,8 @@ body {
 
   h1 {
     text-align: center;
-    background-color: #168aad;
-    color: #d9ed92;
+    background-color: #e9c46a;
+    color: #003049;
     font-family: Montserrat;
     padding: 10px;
     margin-bottom:0px;
@@ -78,16 +79,18 @@ body {
     border-bottom: 1px dotted #000;
     font-size:12px;
     text-decoration: none;
-    color: #262626;
+    color: #669bbc;
   }
   
   .button {
     display: inline-block;
-    border: 0.5px solid #CCC;
-    padding: 14px;
+    border: 0px solid #CCC;
+    padding: 10px;
     border-radius: 10px;
-    background-color: #184e77;
-    color: #d9ed92;
+    background-color: #669bbc;
+    color: #e9c46a;
+    font-weight: bolder;
+    font-size: 15px;
     font-family: 'Montserrat';
     cursor:pointer;
   }
