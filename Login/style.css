@@ -1,0 +1,101 @@
+body {
+    background: url(https://img.freepik.com/free-photo/cyclist-man-racing-bike-outdoor_1150-7494.jpg?t=st=1725804946~exp=1725808546~hmac=a788bfaed053f126d8a3c8e1301ed185399ff3da96e56552b4e988844c1f989b&w=996) no-repeat center center fixed; 
+    background-size: cover;
+    color: #023047;
+  }
+  .container {
+    perspective: 1000;
+    margin: 0 auto;
+    margin-top: 110px;
+    margin-bottom: 50px;
+  }
+  
+  .container, .page {
+    width: 320px;
+    height: 480px;
+    border-radius: 4px;
+    font-family: "Open Sans";
+  }
+  
+  .flip {
+    transition: 0.6s;
+    transform-style: preserve-3d;
+    position: relative;
+  }
+  
+  .page {
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #d9ed92;
+  }
+  
+  .signup {
+    z-index: 2;
+  }
+  
+  .login {
+    transform: rotateY(180deg);
+  }
+  
+  .container.hover .flip, .container.flipped .flip {
+    transform: rotateY(180deg);
+  }
+
+  h1 {
+    text-align: center;
+    background-color: #168aad;
+    color: #d9ed92;
+    font-family: Montserrat;
+    padding: 10px;
+    margin-bottom:0px;
+  }
+  
+  h2 {
+    font-size: 15px;
+    margin-bottom: 5px;
+  }
+  
+  .main {
+    padding: 20px;
+  }
+  
+  input[type='text'], input[type='password'] {
+    border: 2px solid #CCC;
+    border-radius: 4px;
+    height: 20px;
+    padding: 5px 5px;
+    font-size: 14px;
+    width: 250px;
+  }
+  
+  input:focus {
+    border-color: #1569C7;
+  }
+  
+  a {
+    border-bottom: 1px dotted #000;
+    font-size:12px;
+    text-decoration: none;
+    color: #262626;
+  }
+  
+  .button {
+    display: inline-block;
+    border: 0.5px solid #CCC;
+    padding: 14px;
+    border-radius: 10px;
+    background-color: #184e77;
+    color: #d9ed92;
+    font-family: 'Montserrat';
+    cursor:pointer;
+  }
+  
+  .otherway {
+    display:inline;
+    float:right;
+    font-size:14px;
+    border-bottom: 1px dotted #000;
+    cursor:pointer;
+  }
