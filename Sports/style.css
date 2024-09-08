@@ -16,6 +16,7 @@
     background-color: #003049;
     position: relative;
     display: inline-block;
+    position: fixed;
   }
   
   .logo{
@@ -44,6 +45,84 @@
   .nav > #nav-check {
     display: none;
   }
+
+
+  .mide{
+    height: 600px;
+    width: max;
+    background-color: #e5e5e5;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    /* background-image: url(yoga2.jpeg); */
+    background-size:cover ;
+    background-position: center;
+    font-size: 27px;
+}
+.sport{
+    height: 300px;
+    width: 300px;
+    /* background-color: #000000; */
+    border: 1px solid black;
+    border-radius: 10px;
+    background-image: url("cricket.jpeg");
+    background-size:cover;
+    box-shadow: 0 0 10 rgba(0,0,0,.2);
+}
+
+.sport p{
+    padding-top: 10px;
+    padding-left: 20px;
+}
+
+.sport:hover{
+
+    border: 5px solid black;
+}
+
+.fitness{
+    height:300px;
+    width: 300px;
+    background-color:#e5e5e5;
+    /* margin-top:10px ; */
+    border: 1px solid black;
+    border-radius: 10px;
+    background-image: url("football1.jpeg");
+    background-size: cover;
+    box-shadow: 0 0 10 rgba(0,0,0,.2);
+    /* margin-top: 20px; */
+    /* padding-top: 10px; */
+}
+
+.fitness p{
+    padding-top: 10px;
+    padding-left: 20px;
+}
+
+.fitness:hover{
+        border: 5px solid black;
+}
+.javlin{
+    height: 300px;
+    width: 300px;
+    /* background-color: #000000; */
+    border: 1px solid black;
+    border-radius: 10px;
+    background-image: url("javlin.png");
+    background-size:cover;
+    box-shadow: 0 0 10 rgba(0,0,0,.2);
+}
+
+.javlin p{
+    padding-top: 10px;
+    padding-left: 20px;
+}
+
+.javlin:hover{
+
+    border: 5px solid black;
+} 
+
   
   @media (max-width:600px) {
     .nav > .nav-btn {
