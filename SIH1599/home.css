@@ -47,18 +47,127 @@ body {
     display: none;
 }
 
-.main {
+
+/* HEADINGS */
+
+h1, p {
+    text-align: center;
+    line-height: 1.4;
+}
+
+h1 {
+    font-size: 4.2rem;
+}
+
+p{
+    font-size: 2em;
+}
+
+h2 {
+    color: #000;
+    font-size: 1.3rem;
+    text-align: center;
+    line-height: 1.4;
+    margin-bottom: 10px;
+}
+
+/* BASIC SETUP */
+
+.page-wrapper {
+    width: 100%;
+    height: auto;
+}
+
+/* SECTIONS */
+
+.headline {
+    width: 100%;
     height: 100vh;
-    width: max;
-    background-color: rgb(0, 0, 0, 0.3);
-    background: url(https://images.unsplash.com/photo-1535743686920-55e4145369b9?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    /* background-image: url(yoga2.jpeg); */
+    min-height: 350px;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)), url('https://img.freepik.com/free-photo/people-working-out-indoors-together-with-dumbbells_23-2149175377.jpg?ga=GA1.1.556692687.1722779006&semt=ais_hybrid');
     background-size: cover;
-    background-position: center;
-    font-size: 27px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.features {
+    width: 100%;
+    height: auto;
+    /* background-color: #f1f1f1; */
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)), url('https://img.freepik.com/free-vector/man-running-with-blue-flowing-wave_1017-9202.jpg?ga=GA1.1.556692687.1722779006&semt=ais_hybrid');
+    background-repeat: round;
+    display: flex;
+    padding: 50px 20px;
+    justify-content: space-around;
+}
+
+.feature-container {
+    flex-basis: 30%;
+    margin-top: 10px;
+}
+
+.feature-container p {
+    text-align: center;
+    line-height: 1.2;
+    margin-bottom: 15px;
+}
+
+.feature-container img {
+    width: 100%;
+    margin-bottom: 15px;
+    border-radius: 20px;
+    transition: all;
+}
+
+.home_img:hover{
+    transform: scale(1.1);
+    transition-duration: 2s;
+    transition-timing-function: ease;
+}
+
+/* Media Queries */
+
+/* Mobile Devices - Phones/Tablets */
+
+@media only screen and (max-width: 720px) {
+    .features {
+        flex-direction: column;
+        padding: 50px;
+    }
+
+    /* MOBILE HEADINGS */
+
+    h1 {
+        font-size: 1.9rem;
+    }
+
+    h2 {
+        font-size: 1rem;
+    }
+
+    p {
+        font-size: 0.8rem;
+    }
+
+    /* SECTIONS */
+
+    .headline {
+        height: 20vh;
+    }
+
+    .feature-container p {
+        margin-bottom: 25px;
+    }
+
+    .feature-container {
+        margin-top: 20px;
+    }
+
+    .feature-container:nth-child(2) {
+        order: -1;
+    }
+
 }
 
 

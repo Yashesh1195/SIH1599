@@ -15,9 +15,9 @@ body {
   width: 100%;
   padding-top: 10px;
   background-color: #003049;
-  position: relative;
   display: inline-block;
   position: fixed;
+  top: 0;
 }
 
 .logo {
@@ -47,19 +47,54 @@ body {
   display: none;
 }
 
-.main {
-  height: 100vh;
-  width: max;
-  background-color: rgb(0, 0, 0, 0.3);
-  background: url(https://images.unsplash.com/photo-1535743686920-55e4145369b9?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  /* background-image: url(yoga2.jpeg); */
-  background-size: cover;
-  background-position: center;
-  font-size: 27px;
+#beginner{
+  height: auto;
+  width: 100%;
+  position: static;
+  margin-top: 100px;
+  display: block;
+
+  caption{
+    font-size: 2em;
+    font-weight: bold;
+  }
 }
+
+#beginner > h1{
+  text-align: center;
+  font-size: 3.5em;
+}
+
+#intermediate{
+  height: auto;
+  width: 100%;
+  position: static;
+  margin-top: 100px;
+  display: block;
+
+  caption{
+    font-size: 2em;
+    font-weight: bold;
+  }
+}
+
+#intermediate > h1{
+  text-align: center;
+  font-size: 3.5em;
+}
+
+table, th, tr, td {
+  border: 3px solid #ffa31a;
+
+  th, tr, td{
+    padding: 10px 20px;
+  }
+}
+
+#week_2, #week_3, #head_2, #week_4, #week_5, #week_6{
+  display: none;
+}
+
 
 @media (max-width:600px) {
   .nav>.nav-btn {
