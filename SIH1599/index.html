@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="index.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FIT-QUEST</title>
+</head>
+<body>
+    <div class= "container" id= "toggle">
+        <div class= "flip">
+          <div class= "login page">
+            <h1>LOGIN</h1>
+            <div class= "main">
+              <form action="user_profile.html">
+                <h2>Username or Email Address</h2>
+              <input type= "text" placeholder= "Username or Email Address" id="login">
+              <h2>Password</h2>
+              <input type= "password" placeholder= "Password" id="login">
+              <br>
+              <a href= "#">Forgot your password?</a>
+              <br><br>
+              <button class= "button">
+                Login
+              </button><br></br>
+              </form>
+              <div class= "otherway" onclick = "flip()">
+                 Don't have an account?
+              </div>
+            </div>
+          </div>
+          <div class= "signup page">
+            <h1>SIGN UP</h1>
+            <form action="user_profile.html">
+                <div class= "main">
+                    <h2>Username</h2>
+                    <input type= "text" placeholder= "Username" id="signup">
+                    <h2>Email Address</h2>
+                    <input type= "text" placeholder= "Email Address" id="signup">
+                    <h2>Password</h2>
+                    <input type= "password" placeholder= "Password" id="signup">
+                    <h2>Retype Password</h2>
+                    <input type= "password" placeholder= "Retype Password" id="signup"><br><br>
+                    <button class= "button">
+                      Sign Up
+                    </button>
+            </form>
+              <div class= "otherway" onclick = "flip()">
+                Already have an account?
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>

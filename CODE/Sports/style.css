@@ -1,0 +1,157 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'segoe ui';
+    color: #fdf0d5;
+  }
+  
+  .nav {
+    height: 70px;
+    width: 100%;
+    padding-top: 10px;
+    background-color: #003049;
+    position: relative;
+    display: inline-block;
+    position: fixed;
+  }
+  
+  .logo{
+      font-size: 1.5em;
+      margin: 8px;
+  }
+  
+  .nav > .nav-links {
+    margin-top: -50px;
+    display: inline;
+    float: right;
+    font-size: 18px;
+  }
+  
+  .nav > .nav-links > a {
+    display: inline-block;
+    padding: 13px 10px 13px 10px;
+    text-decoration: none;
+    color: #efefef;
+  }
+  
+  .nav > .nav-links > a:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  
+  .nav > #nav-check {
+    display: none;
+  }
+
+
+  .mide{
+    height: 600px;
+    width: max;
+    background-color: #e5e5e5;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    /* background-image: url(yoga2.jpeg); */
+    background-size:cover ;
+    background-position: center;
+    font-size: 27px;
+}
+.sport{
+    height: 300px;
+    width: 300px;
+    /* background-color: #000000; */
+    border: 1px solid black;
+    border-radius: 10px;
+    background-image: url("cricket.jpeg");
+    background-size:cover;
+    box-shadow: 0 0 10 rgba(0,0,0,.2);
+}
+
+.sport p{
+    padding-top: 10px;
+    padding-left: 20px;
+}
+
+.sport:hover{
+
+    border: 5px solid black;
+}
+
+.fitness{
+    height:300px;
+    width: 300px;
+    background-color:#e5e5e5;
+    /* margin-top:10px ; */
+    border: 1px solid black;
+    border-radius: 10px;
+    background-image: url("football1.jpeg");
+    background-size: cover;
+    box-shadow: 0 0 10 rgba(0,0,0,.2);
+    /* margin-top: 20px; */
+    /* padding-top: 10px; */
+}
+
+.fitness p{
+    padding-top: 10px;
+    padding-left: 20px;
+}
+
+.fitness:hover{
+        border: 5px solid black;
+}
+.javlin{
+    height: 300px;
+    width: 300px;
+    /* background-color: #000000; */
+    border: 1px solid black;
+    border-radius: 10px;
+    background-image: url("javlin.png");
+    background-size:cover;
+    box-shadow: 0 0 10 rgba(0,0,0,.2);
+}
+
+.javlin p{
+    padding-top: 10px;
+    padding-left: 20px;
+}
+
+.javlin:hover{
+
+    border: 5px solid black;
+} 
+
+  
+  @media (max-width:600px) {
+    .nav > .nav-btn {
+      display: inline-block;
+      position: absolute;
+      right: 0px;
+      top: 0px;
+    }
+  
+    .nav > .nav-links {
+      position: absolute;
+      display: block;
+      width: 100%;
+      background-color: #333;
+      height: 0px;
+      transition: all 0.3s ease-in;
+      overflow-y: hidden;
+      top: 50px;
+      left: 0px;
+    }
+    .nav > .nav-links > a {
+      display: block;
+      width: 100%;
+    }
+    .nav > #nav-check:not(:checked) ~ .nav-links {
+      height: 0px;
+    }
+    .nav > #nav-check:checked ~ .nav-links {
+      height: calc(100vh - 50px);
+      overflow-y: auto;
+    }
+  }

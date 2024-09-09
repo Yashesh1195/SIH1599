@@ -1,0 +1,130 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'segoe ui';
+    color: #fdf0d5;
+    background-color: #669bbc;
+  }
+  
+  .nav {
+    height: 70px;
+    width: 100%;
+    padding-top: 10px;
+    background-color: #003049;
+    position: relative;
+    display: inline-block;
+    position: fixed;
+  }
+  
+  .logo{
+      font-size: 1.5em;
+      margin: 8px;
+  }
+  
+  .nav > .nav-links {
+    margin-top: -48px;
+    display: inline;
+    float: right;
+    font-size: 18px;
+  }
+  
+  .nav > .nav-links > a {
+    display: inline-block;
+    padding: 13px 10px 13px 10px;
+    text-decoration: none;
+    color: #efefef;
+  }
+  
+  .nav > .nav-links > a:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  
+  .nav > #nav-check {
+    display: none;
+  }
+  
+  .main{
+      height: 100vh;
+      width: max;
+      background-color: rgb(0, 0, 0, 0.3);
+      background: url(https://images.unsplash.com/photo-1535743686920-55e4145369b9?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      /* background-image: url(yoga2.jpeg); */
+      background-size:cover ;
+      background-position: center;
+      font-size: 27px;
+  }
+  
+  /* .main a{
+      color: #efefef;
+  }
+  
+  .sport, .fitness{
+      height: 300px;
+      width: 300px;
+      margin-top: 40px;
+      background-color: rgb(0, 0, 0, 0.5);
+      border: 1px solid black;
+      border-radius: 10px;
+      background-image: url("sport1.png");
+      background-size:cover;
+      box-shadow: 0 0 10 rgba(0,0,0,.2);
+      color: inherit;
+      padding-top: 10px;
+      text-align: center;
+      filter: grayscale(60%);
+  }
+  
+  .sport{
+      background-image: url(/CODE/Sports/sports.jpeg);
+      background-repeat: no-repeat;
+  }
+  
+  .fitness{
+      background-image: url(/CODE/Fitness/fitness.jpeg);
+      background-repeat: no-repeat;
+  }
+  
+  .sport:hover, .fitness:hover{
+      transform: scale(1.1);
+      transition-duration: 800ms;
+      transition-timing-function: ease-in-out;
+  }
+   */
+  @media (max-width:600px) {
+      .nav > .nav-btn {
+        display: inline-block;
+        position: absolute;
+        right: 0px;
+        top: 0px;
+      }
+    
+      .nav > .nav-links {
+        position: absolute;
+        display: block;
+        width: 100%;
+        background-color: #333;
+        height: 0px;
+        transition: all 0.3s ease-in;
+        overflow-y: hidden;
+        top: 50px;
+        left: 0px;
+      }
+      .nav > .nav-links > a {
+        display: block;
+        width: 100%;
+      }
+      .nav > #nav-check:not(:checked) ~ .nav-links {
+        height: 0px;
+      }
+      .nav > #nav-check:checked ~ .nav-links {
+        height: calc(100vh - 50px);
+        overflow-y: auto;
+      }
+    }
